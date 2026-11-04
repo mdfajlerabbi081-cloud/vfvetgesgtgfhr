@@ -1,11 +1,33 @@
-<div align="center">
+# TRENDVERSE — প্রিমিয়াম ই-কমার্স ও ইনভেন্টরি কন্ট্রোল ওয়েবসাইট
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+**অফিস ও শপ ঠিকানা:** দক্ষিণ মনিপুর, মিরপুর-২, ঢাকা-১২১৬  
+**হেল্পলাইন ও হোয়াটসঅ্যাপ:** `01930045168`  
+**বিকাশ (Personal / Send Money):** `01759720739`
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## ১. লোকাল কম্পিউটার বা VPS সার্ভারে রান করার নিয়ম
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+১. ZIP ফাইলটি আনজিপ (Extract) করুন।
+২. টার্মিনালে ফোল্ডারটি ওপেন করে নিচের কমান্ডগুলো রান করুন:
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+৩. ব্রাউজারে `http://localhost:3000` ওপেন করুন।
+
+---
+
+## ২. প্রোডাকশন বিল্ড (cPanel / Vercel / Netlify হোস্টিং)
+
+প্রোডাকশন বিল্ড তৈরি করতে রান করুন:
+
+```bash
+npm run build
+```
+
+- **Vercel / Netlify**: প্রজেক্ট ফোল্ডারটি সরাসরি আপলোড বা GitHub-এ পুশ করলে অটোমেটিক লাইভ হয়ে যাবে (Build command: `npm run build`, Output directory: `dist`)।
+- **cPanel (`public_html`)**: `npm run build` দেওয়ার পর তৈরি হওয়া `dist/` ফোল্ডারের ভেতরের সব ফাইল সরাসরি `public_html`-এ আপলোড করুন।
+- **ডাটাবেস মাইগ্রেশন**: `public/trendverse_migration.sql` ফাইলটি PostgreSQL বা Supabase ডাটাবেসে রান করলে সব টেবিল ও ডিফল্ট সেটিংস তৈরি হয়ে যাবে।

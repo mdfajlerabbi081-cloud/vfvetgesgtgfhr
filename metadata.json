@@ -1,0 +1,6 @@
+{
+  "name": "আমার শপ - প্রফেশনাল ই-কমার্স শপ",
+  "description": "TRENDVERSE-এর অফিশিয়াল ই-কমার্স সাইট। দক্ষিণ মনিপুর, মিরপুর-২, ঢাকা থেকে সেরা মানের ওভারসাইজ টি-শার্ট ও থ্রি-পিস অর্ডার করুন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
